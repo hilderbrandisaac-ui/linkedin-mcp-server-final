@@ -1,0 +1,68 @@
+{
+  "test_connection": {
+    "method": "POST",
+    "url": "http://localhost:3000/mcp",
+    "headers": {
+      "Content-Type": "application/json"
+    },
+    "body": {
+      "jsonrpc": "2.0",
+      "method": "tools/list",
+      "id": 1
+    }
+  },
+  "get_profile": {
+    "method": "POST",
+    "url": "http://localhost:3000/mcp",
+    "headers": {
+      "Content-Type": "application/json"
+    },
+    "body": {
+      "jsonrpc": "2.0",
+      "method": "tools/call",
+      "params": {
+        "name": "get_profile",
+        "arguments": {}
+      },
+      "id": 2
+    }
+  },
+  "create_post": {
+    "method": "POST",
+    "url": "http://localhost:3000/mcp",
+    "headers": {
+      "Content-Type": "application/json"
+    },
+    "body": {
+      "jsonrpc": "2.0",
+      "method": "tools/call",
+      "params": {
+        "name": "create_post",
+        "arguments": {
+          "text": "Hello from my MCP server! 🚀",
+          "visibility": "PUBLIC"
+        }
+      },
+      "id": 3
+    }
+  },
+  "search_organizations": {
+    "method": "POST",
+    "url": "http://localhost:3000/mcp",
+    "headers": {
+      "Content-Type": "application/json"
+    },
+    "body": {
+      "jsonrpc": "2.0",
+      "method": "tools/call",
+      "params": {
+        "name": "search_organizations",
+        "arguments": {
+          "query": "technology",
+          "limit": 5
+        }
+      },
+      "id": 4
+    }
+  }
+}
