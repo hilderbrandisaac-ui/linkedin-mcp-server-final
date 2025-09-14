@@ -1,4 +1,4 @@
-# 🔗 LinkedIn MCP Server
+# LinkedIn MCP Server
 
 [![Deploy Status](https://github.com/YOUR_USERNAME/linkedin-mcp-server/workflows/Deploy%20LinkedIn%20MCP%20Server/badge.svg)](https://github.com/YOUR_USERNAME/linkedin-mcp-server/actions)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
@@ -6,16 +6,16 @@
 
 A serverless Model Context Protocol (MCP) server that enables AI models like ChatGPT and Claude to interact with LinkedIn through a standardized interface. Built for developers learning MCP server development.
 
-## 🌟 Features
+## Features
 
-- **🆓 Zero Cost**: Hosted entirely on GitHub Pages for free
-- **🚀 Easy Integration**: Simple URL endpoint for AI model connection  
-- **🔧 LinkedIn Tools**: Profile access, posting, organization search
-- **🌐 CORS Enabled**: Works with web-based AI clients
-- **⚡ Serverless**: Powered by GitHub Actions and Service Workers
-- **📚 Learning-Friendly**: Well-documented code structure for beginners
+- ** Zero Cost**: Hosted entirely on GitHub Pages for free
+- ** Easy Integration**: Simple URL endpoint for AI model connection  
+- ** LinkedIn Tools**: Profile access, posting, organization search
+- ** CORS Enabled**: Works with web-based AI clients
+- ** Serverless**: Powered by GitHub Actions and Service Workers
+- ** Learning-Friendly**: Well-documented code structure for beginners
 
-## 📁 Project Structure
+##  Project Structure
 
 ```
 linkedin-mcp-server/
@@ -34,7 +34,7 @@ linkedin-mcp-server/
 └── README.md                   # This file
 ```
 
-## 🚀 Quick Start
+##  Quick Start
 
 ### For AI Models (ChatGPT, Claude, etc.)
 
@@ -52,7 +52,7 @@ https://YOUR_USERNAME.github.io/linkedin-mcp-server/mcp
 | `search_organizations` | Search for organizations | `query`, `limit` |
 | `get_organizations` | Get user's organization access | `role` (optional) |
 
-## 🛠️ Setup & Deployment
+##  Setup & Deployment
 
 ### Quick Deploy
 1. Fork this repository
@@ -66,7 +66,7 @@ cd linkedin-mcp-server
 python -m http.server 8000 --directory src/public
 ```
 
-## 📖 Usage Examples
+##  Usage Examples
 
 ### ChatGPT Integration
 1. Add MCP server: `https://yourusername.github.io/linkedin-mcp-server/mcp`
@@ -79,11 +79,11 @@ curl -X POST https://your-server.com/mcp \
   -d '{"jsonrpc":"2.0","method":"tools/list","id":1}'
 ```
 
-## 🧪 Testing
+##  Testing
 
 Run the built-in tests by visiting your deployed server and clicking the test buttons, or use the examples in `examples/test-requests.json`.
 
-## 📋 MCP Protocol Compliance
+##  MCP Protocol Compliance
 
 - ✅ JSON-RPC 2.0 over HTTP
 - ✅ `tools/list` and `tools/call` methods
@@ -99,7 +99,7 @@ Run the built-in tests by visiting your deployed server and clicking the test bu
 4. Test locally
 5. Submit a pull request
 
-## 📄 License
+##  License
 
 MIT License - feel free to use this for your own projects!
 
@@ -108,7 +108,3 @@ MIT License - feel free to use this for your own projects!
 - [Model Context Protocol](https://modelcontextprotocol.io/)
 - [LinkedIn API Documentation](https://docs.microsoft.com/linkedin/)
 - [GitHub Pages Guide](https://pages.github.com/)
-
----
-
-**🎉 Your LinkedIn MCP Server is ready! Start connecting AI to LinkedIn today!**
